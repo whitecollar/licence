@@ -37,9 +37,21 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Лицензии', 'url' => ['license/index']],
+          //  ['label' => 'События', 'url' => ['event/index']],
+         //   ['label' => 'Участники', 'url' => ['member/index']],
+         //   ['label' => 'Судьи', 'url' => ['judge/index']],
+          //  ['label' => 'Настройки', 
+          //              'items' => [
+          //                  ['label' => 'Тип устройств', 'url' => ['type-device/index']],
+          //                  ['label' => 'Тип персоналий', 'url' => ['type-person/index']],
+          //                  ['label' => 'Устройства', 'url' => ['device/index']],
+          //              ]
+          // 
+          //  ],
+
+
+
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
