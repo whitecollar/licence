@@ -43,14 +43,22 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => true,
             'rules' => [
+               // '' => 'site/index',
+               '<controller>/<action>' => '<controller>/<action>',                             
+              // ['class' => 'yii\rest\UrlRule', 'pluralize'=>false,  'controller' => ['ajudge'=>'ajudge']],
+              // '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+               ['class' => 'yii\rest\UrlRule', 'controller' => 'li'],
+            //    ['class' => 'yii\rest\UrlRule', 'controller' => 'member'],
+            //    ['class' => 'yii\rest\UrlRule', 'controller' => 'book'],
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
