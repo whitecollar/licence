@@ -38,6 +38,8 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Лицензии', 'url' => ['license/index']],
+            
+            ['label' => 'Добавить лицензию', 'url' => ['license/createkey']],
           //  ['label' => 'События', 'url' => ['event/index']],
          //   ['label' => 'Участники', 'url' => ['member/index']],
          //   ['label' => 'Судьи', 'url' => ['judge/index']],
