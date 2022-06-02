@@ -33,6 +33,9 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
