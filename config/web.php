@@ -64,6 +64,7 @@ $config = [
         
     ],
     'params' => $params,
+    'defaultRoute' => 'license/index',
 ];
 
 if (YII_ENV_DEV) {
