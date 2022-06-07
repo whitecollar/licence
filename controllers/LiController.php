@@ -41,7 +41,7 @@ class LiController extends ActiveController
         $user = Yii::$app->request->get('namusere');
         $userSerial = Yii::$app->request->get('userSerial');
         $userPKey = Yii::$app->request->get('userPKey');
-        if(isset($name,$user,$userSerial$userPKey))
+        if(isset($name,$user,$userSerial,$userPKey))
         {
             echo '1111111111111111111';
         }
