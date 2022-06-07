@@ -36,7 +36,12 @@ class LiController extends ActiveController
     header('Content-type: application/json');
 
         echo JSON::encode($customer);   
-        if( isset(Yii::$app->request->get('id') ))
+        $id = Yii::$app->request->get('id');
+        $name = Yii::$app->request->get('name');
+        $user = Yii::$app->request->get('namusere');
+        $userSerial = Yii::$app->request->get('userSerial');
+        $userPKey = Yii::$app->request->get('userPKey');
+        if(isset($name))
         {
             echo '1111111111111111111';
         }
