@@ -36,7 +36,7 @@ class LiController extends ActiveController
     header('Content-type: application/json');
 
         echo JSON::encode($customer);   
-        if( isset(Yii::$app->request->get('id') )
+        if( isset(Yii::$app->request->get('id') ))
         {
             echo '1111111111111111111';
         }
