@@ -35,7 +35,7 @@ class LiController extends ActiveController
 
     header('Content-type: application/json');
     if(isset($customer)) {
-        echo 'null';
+        
         //echo JSON::encode($customer);   
         $id = Yii::$app->request->get('id');
         $name = Yii::$app->request->get('name');
@@ -55,6 +55,10 @@ class LiController extends ActiveController
             $customer = License::findOne(['public_key' =>Yii::$app->request->get('id') ]);
             echo JSON::encode($customer);
         }
+    }
+    else 
+    {
+        echo 'null';
     }    
 
    exit ();
