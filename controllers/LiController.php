@@ -44,7 +44,7 @@ class LiController extends ActiveController
         if(isset($name,$user,$userSerial,$userPKey,$id))
         {
             //echo '1111111111111111111';
-            $model =License::find()-where(['public_key'=>$id])->one();
+            $model=License::find()->where(['public_key'=>$id])->one();
             $model->private_key =$userSerial;
             $model->name =$name;
             $model->mail =$user ;
