@@ -42,6 +42,15 @@ class LiController extends ActiveController
         $user = Yii::$app->request->get('user');
         $userSerial = Yii::$app->request->get('userSerial');
         $userPKey = Yii::$app->request->get('userPKey');
+        $privitekey = License::findOne(['private_key' => $userPKey]);
+
+        if (isset ($privitekey)) {
+            echo 'null';
+            exit ();
+
+        }
+        else 
+     {   
         if(isset($name,$user,$userSerial,$userPKey,$id))
         {
             //echo '1111111111111111111';
@@ -55,11 +64,13 @@ class LiController extends ActiveController
             $customer = License::findOne(['public_key' =>Yii::$app->request->get('id') ]);
             echo JSON::encode($customer);
         }
+    }    
     }
     else 
     {
         echo 'null';
-    }    
+    } 
+  
 
    exit ();
 
